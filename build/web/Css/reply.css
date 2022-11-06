@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+body{
+    width: 98.7vw;
+    height: 100vh;
+    background:linear-gradient(90deg,rgb(27, 27, 255),rgb(42, 195, 255));
+}
+.mainpage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startdiv{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    box-shadow: 0 0 0.5rem 0.04rem black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    width: 100%;
+    height: 13%;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.fstp{
+    width: 50%;
+    height: 60%;
+   
+    text-align: center;
+    font-size: 180%;
+    font-family:constantia;
+    font-weight: bold;
+}
+.form{
+    width: 100%;
+    height: 87%;
+    
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+.myform{
+    width: 60%;
+    height: 87%;
+    /* background-color: rgb(150, 50, 255); */
+}
+.realform{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.txtview{
+    width: 60%;
+    height: 10%;
+    font-family: cursive;
+    font-size: 110%;
+    border-radius: 10px;
+    padding: 1%;
+    border: 2px solid rgb(32, 110, 255);
+}
+.ans{
+    width: 35%;
+    height: 60%;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    left: 52%;
+    display: block;
+    box-shadow: 0 0 0.5rem 0.04rem black; 
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 120%;
+    display: none;
+}
+.ansdiv
+{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    color: white;
+    font-size: 110%;
+    font-family: constantia;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+padding: 1.5%;
+
+}
+.ansreply{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.txt2{
+    width: 78%;
+    height: 60%;
+    font-family: cursive;
+    font-size: 70%;
+    padding: 1%;
+    font-size: 80%;
+    border-radius: 10px;
+    border: 2px solid rgb(16, 71, 250);
+    outline: none;
+}
+#btn3{
+    width: 30%;
+    height: 30%;
+    margin: 2.5%;
+    padding: 1%;
+    font-family: constantia;
+    font-size: 100%;
+    color: white;
+    background-color: blue;
+    outline: none;
+    border-radius: 10px;
+    /* border: none; */
+}
+.new-ans{
+    display: block;
+}
+
+
+#imgsprt{
+    opacity: 0.9;
+    border-radius: 5px;
+    /* box-shadow: 10px 4px 2px 2px #999; */
+}

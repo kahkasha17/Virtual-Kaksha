@@ -1,0 +1,897 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+.mainpage{
+    width:98.7vw;
+    height: 120vh;
+    /* background-color: rgb(171, 255, 227); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+.new-mainpage{
+    height: 230vh;
+}
+
+/*******************[ header ] ******************/
+.box1{
+    width: 100%;
+    height: 10%;
+    background:linear-gradient(90deg,rgb(0, 132, 255),purple);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.new-box1{
+    height: 6%;
+}
+
+.headimg{
+    width: 4.5%;
+    margin-left: 0.5%;
+}
+.links{
+    width: 45%;
+}
+.homelinks
+{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.homelinks li{
+    display: inline;
+}
+.homelinks li:hover{
+    background-color: white;
+    padding: 1%;
+    transition: all ease-in-out;
+    border-radius: 20px;
+}
+.homelinks li:hover>a{
+    color: purple;
+    
+}
+.homelinks li a{
+    color: white;
+    text-decoration: none;
+    font-size: 180%;
+}
+
+.stdnav{
+    width: 18%;
+    height: 50%;
+    /* background-color: cadetblue; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.stdnav-ul{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.stdnav-ul-li{
+    width: 80%;
+    height: 100%;
+    /* background-color: pink; */
+    font-size: 180%;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    text-align: right;
+    /* padding-top:1% ; */
+}
+.stdnav-ul-li2{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    /* background-color: cadetblue; */
+    position: relative;
+    z-index: 1;
+}
+.stdnav-ul-li2-ul{
+    width: 100%;
+    height: 100%;
+    /* background-color: brown; */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.stdnav-ul-li2-ul li{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    background-color: purple;
+    margin: 0.4%;
+    border-radius: 10px;
+    box-shadow: 0 0 0.2rem 0.02rem rgb(0, 0, 0);
+    padding: 1%;
+    /* border: 1px solid black; */
+}
+.stdnav-ul-li2-ul li:hover{
+    background-color: white;
+}
+.stdnav-ul-li2-ul li:hover>a{
+    color: purple;
+}
+.stdnav-ul-li2-ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+}
+
+
+
+
+/*******************[ heading ] ******************/
+.box2{
+    width: 100%;
+    height: 60%;
+    /* background-color: rgb(187, 255, 0); */
+    position: relative;
+    display: flex;
+   margin-top: -3.3%;
+    /* box-shadow: 0 0 0.2rem 0.02rem rgb(0, 0, 0); */
+}
+.new-box2{
+    height:35%;
+    margin-top: -3.3%;
+}
+.libimg{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    opacity: 0.9;
+}
+.libpic{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+.libheading{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+    margin-left: -95%;
+    font-family: constantia;
+    color: blueviolet;
+    font-size: 140%;
+    margin-top: 1%;
+    opacity: 1;
+}
+.libp{
+    color:blueviolet;
+    font-family: cursive;
+    opacity: 1;
+    font-size: 90%;
+    font-style: italic;
+}
+
+/*******************[ boxes ] ******************/
+.box3{
+    width: 85%;
+    height: 55%;
+    /* background-color: rgb(0, 225, 255); */
+    margin-top: -25%;
+    position: relative;
+    /* opacity: 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.new-box3{
+    height: 30%;
+    margin-top: -28%;
+}
+.books{
+    width: 31%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 0.2rem 0.02rem rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.bookpic{
+    width: 80%;
+    height: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.bookimg{
+    width: 100%;
+    height: 70%;
+    margin-top: 6%;
+    /* background-color:green; */
+}
+
+.bookcap{
+    width: 120%;
+    height: 20%;
+    font-family: cursive;
+    font-size: 130%;
+    /* background-color:green; */
+    margin-top: 8%;
+}
+
+.bookbtn{
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(251, 255, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 3%;
+}
+#bookbtn2{
+    width: 60%;
+    height: 70%;
+    background-color: blue;
+    color: white;
+    font-size: 140%;
+    font-family: constantia;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.notes{
+    width: 31%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 0.2rem 0.02rem black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notepic{
+    width: 80%;
+    height: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.noteimg{
+    width: 100%;
+    height: 70%;
+    margin-top: 6%;
+}
+
+.notecap{
+    width: 120%;
+    height: 20%;
+    font-family: cursive;
+    font-size: 130%;
+    /* background-color:green; */
+    margin-top: 8%;
+}
+
+.notebtn{
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(251, 255, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 3%;
+}
+#notebtn2{
+    width: 60%;
+    height: 70%;
+    background-color: blue;
+    color: white;
+    font-size: 140%;
+   font-family: constantia;
+    border-radius: 20px;
+    text-align: center;
+
+}
+.vids{
+    width: 31%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 0.2rem 0.02rem black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between
+}
+
+.vidpic{
+    width: 80%;
+    height: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vidimg{
+    width: 100%;
+    height: 70%;
+    margin-top: 6%;
+}
+
+.vidcap{
+    width: 110%;
+    height: 20%;
+    font-family: cursive;
+    font-size: 130%;
+    /* background-color:green; */
+    margin-top: 8%;
+}
+.vidbtn{
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(251, 255, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 3%;
+}
+#vidbtn2{
+    width: 60%;
+    height: 70%;
+    background-color: blue;
+    color: white;
+    font-size: 140%;
+    font-family: constantia;
+    border-radius: 20px;
+    text-align: center;
+
+}
+/*******************[ Upload books ] ******************/
+.box4{
+    width: 90%;
+    height: 42%;
+    /* background-color: white; */
+    box-shadow: 0 0 0.2rem 0.02rem black;
+
+    background:linear-gradient(to left,rgb(255, 79, 255),rgb(88, 1, 88)) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+.new-box4{
+    display: block;
+}
+.notehaed{
+    height: 15%;
+    width: 90%;
+    /* background-color: pink; */
+}
+.noteh1{
+    text-align: center;
+    font-family: constantia;
+    font-size: 180%;
+    text-decoration: underline;
+    color: white;
+    padding-top:3% ;
+}
+.notelistandbox{
+    height: 85%;
+    width: 100%;
+    /* background-color: rgb(190, 19, 47); */
+    display: flex;
+    justify-content: space-between;
+}
+.notelist{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.noteh2{
+    width: 95%;
+    height: 10%;
+    font-family: constantia;
+    font-size: 150%;
+   text-align: center;
+   padding-top: 1%;
+   color: white;
+   background:linear-gradient(to right,rgb(250, 0, 0) ,rgb(255, 120, 120));
+   box-shadow: 0 0 0.2rem 0.02rem black;
+}
+.noteul{
+    width: 95%;
+    height: 90%;
+    margin-bottom: 2%;
+    background-color: white;
+box-shadow: 0 0 0.2rem 0.02rem black;
+    list-style:circle;
+}
+.noteli{
+    font-size: 110%;
+    font-family: cursive;
+    position: relative;
+    left: 8%;
+}
+
+
+
+
+.notestepbtn{
+    width: 70%;
+    height: 98%;
+    background:linear-gradient(to right,rgb(250, 0, 0) ,rgb(255, 120, 199));
+    box-shadow: 0 0 0.2rem 0.02rem black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notesteps{
+    width: 100%;
+    height: 45%;
+    background-color: white;
+    box-shadow: 0 0 0.2rem 0.02rem black;
+    /* background-color: rgb(0, 255, 136); */
+    display: flex;
+    flex-direction: column;
+}
+.steph2{
+    height: 20%;
+    width: 100%;
+    /* background-color: aqua; */
+    font-family: constantia;
+   padding-top:1% ;
+   font-size: 160%;
+   text-align: center;
+   box-shadow: 0 0 0.2rem 0.02rem black;
+   background:linear-gradient(to right,rgb(250, 0, 0) ,rgb(255, 120, 199));
+   color: white;
+}
+.stepul{
+    position: relative;
+    left: 5%;
+    top: 7%;
+    list-style-type: circle;
+    font-size: 120%;
+    font-family: cursive;
+}
+.noteuploadbtn{
+    width: 100%;
+    height: 53%;
+    /* background-color: rgb(9, 255, 0); */
+    margin-bottom: 1%;
+}
+.noteform{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.notename{
+    font-size: 120%;
+    font-family: cursive;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    outline: none;
+    width: 45%;
+    padding:1% ;
+    border-radius: 10px;
+}
+.notefile{
+    font-size: 120%;
+    width: 45%;
+    height: 20%;
+    background-color: white;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 5px 5px 10px black;
+}
+::-webkit-file-upload-button{
+    color: white;
+    height: 100%;
+    width: 30%;
+    font-family: cursive;
+    /* background:linear-gradient(to right,rgb(250, 0, 0) ,rgb(238, 0, 139)); */
+    border:none;
+    border-radius: 10px;
+    box-shadow: 1px 0px 1px 1px pink;
+    outline: none;
+}
+::-webkit-file-upload-button:hover{
+    color: purple;
+    border: 3px solid rgb(97, 11, 146);
+    background: white;
+}
+.noteupload{
+    height: 20%;
+    width: 35%;
+    font-size: 140%;
+    font-family: cursive;
+    background:linear-gradient(to left,rgb(255, 0, 255),rgb(71, 0, 71)) ;
+    color: white;
+    border-radius: 10px;
+}
+/*******************[ Upload book ] ******************/
+.box5{
+    width: 90%;
+    height: 42%;
+    box-shadow: 0 0 0.2rem 0.02rem black;
+    background:linear-gradient(to right,rgb(0, 100, 8),rgb(0, 255, 64)) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+}
+.new-box5{
+    display: block;
+}
+.bookhaed{
+    height: 15%;
+    width: 90%;
+    /* background-color: pink; */
+}
+.bookh1{
+    text-align: center;
+    font-family: constantia;
+    font-size: 180%;
+    color: white;
+    padding-top:3% ;
+    text-decoration: underline;
+}
+.booklistandbox{
+    height: 85%;
+    width: 100%;
+    /* background-color: rgb(190, 19, 47); */
+    display: flex;
+    justify-content: space-between;
+}
+.booklist{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.bookh2{
+    width: 95%;
+    height: 10%;
+    font-family: constantia;
+    font-size: 150%;
+   text-align: center;
+   padding-top: 3%;
+   color: white;
+   background:linear-gradient(to right,rgb(96, 93, 255) ,rgb(9, 0, 141));
+   box-shadow: 0 0 0.2rem 0.02rem black;
+}
+.bookul{
+    width: 95%;
+    height: 90%;
+    margin-bottom: 2%;
+    background-color: white;
+box-shadow: 0 0 0.2rem 0.02rem black;
+    list-style:circle;
+}
+.bookli{
+    font-size: 110%;
+    font-family: cursive;
+    position: relative;
+    left: 8%;
+}
+
+.bookstepbtn{
+    width: 65%;
+    height: 98%;
+    background:linear-gradient(to left,rgb(96, 93, 255) ,rgb(17, 0, 255));
+    box-shadow: 0 0 0.2rem 0.02rem black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booksteps{
+    width: 100%;
+    height: 45%;
+    background-color: white;
+    box-shadow: 0 0 0.2rem 0.02rem black;
+    /* background-color: rgb(0, 255, 136); */
+    display: flex;
+    flex-direction: column;
+}
+.booksteph2{
+    height: 20%;
+    width: 100%;
+    /* background-color: aqua; */
+    font-family: constantia;
+   padding-top:1% ;
+   font-size: 160%;
+   text-align: center;
+   box-shadow: 0 0 0.2rem 0.02rem black;
+   background:linear-gradient(to left,rgb(96, 93, 255) ,rgb(9, 0, 141));
+   color: white;
+}
+.bookstepul{
+    position: relative;
+    left: 5%;
+    top: 7%;
+    list-style-type: circle;
+    font-size: 120%;
+    font-family: cursive;
+}
+.bookuploadbtn{
+    width: 100%;
+    height: 53%;
+    /* background-color: rgb(9, 255, 0); */
+    margin-bottom: 1%;
+}
+.bookform{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.bookname{
+    font-size: 120%;
+    font-family: cursive;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    outline: none;
+    width: 45%;
+    padding: 1%;
+    border-radius: 10px;
+}
+.bookfile{
+    font-size: 120%;
+    width: 45%;
+    height: 20%;
+    background-color: white;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 5px 5px 10px black;
+}
+::-webkit-file-upload-button{
+    color: white;
+    height: 100%;
+    font-family: cursive;
+    background:linear-gradient(to left,blue,purple) ;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 1px 0px 1px 1px pink;
+    outline: none;
+    width: 40%;
+}
+::-webkit-file-upload-button:hover{
+    color: purple;
+    border: 3px solid rgb(97, 11, 146);
+    background: white;
+}
+.bookupload{
+    height: 20%;
+    width: 45%;
+    font-size: 140%;
+    font-family: cursive;
+    background: linear-gradient(to left,rgb(33, 255, 33),rgb(0, 107, 0)) ;
+    color: white;
+    border-radius: 10px;
+}
+
+/*******************[ Upload Vids ] ******************/
+.box6{
+    width: 90%;
+    height: 42%;
+    box-shadow: 0 0 0.2rem 0.02rem black;
+    background:linear-gradient(to right,red,orange) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+.new-box6{
+    display: block;
+}
+.vidhaed{
+    height: 15%;
+    width: 90%;
+    /* background-color: pink; */
+}
+.vidh1{
+    text-align: center;
+    font-family: constantia;
+    font-size: 180%;
+    text-decoration: underline;
+    color: white;
+    padding-top:3% ;
+    width: 100%;
+}
+.vidlistandbox{
+    height: 85%;
+    width: 100%;
+    /* background-color: rgb(190, 19, 47); */
+    display: flex;
+    justify-content: space-between;
+}
+.vidlist{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.vidh2{
+    width: 95%;
+    height: 10%;
+    font-family: constantia;
+    font-size: 140%;
+   text-align: center;
+   padding-top: 3%;
+   color: white;
+   background:linear-gradient(to right,rgb(110, 255, 110),rgb(0, 83, 0));
+   box-shadow: 0 0 0.2rem 0.02rem black;
+}
+.vidul{
+    width: 95%;
+    height: 90%;
+    margin-bottom: 2%;
+    background-color: white;
+box-shadow: 0 0 0.2rem 0.02rem black;
+    list-style:circle;
+}
+.vidli{
+    font-size: 110%;
+    font-family: cursive;
+    position: relative;
+    left: 8%;
+    top: 2%;
+}
+
+.vidstepbtn{
+    width: 70%;
+    height: 98%;
+    box-shadow: 0 0 0.2rem 0.02rem black;
+    background:linear-gradient(to left,rgb(110, 255, 110),rgb(0, 83, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vidsteps{
+    width: 100%;
+    height: 45%;
+    background-color: white;
+    box-shadow: 0 0 0.2rem 0.02rem black;
+    /* background-color: rgb(0, 255, 136); */
+    display: flex;
+    flex-direction: column;
+}
+.vidsteph2{
+    height: 20%;
+    width: 100%;
+    /* background-color: aqua; */
+    font-family: constantia;
+   padding-top:1% ;
+   font-size: 160%;
+   text-align: center;
+   box-shadow: 0 0 0.2rem 0.02rem black;
+   background:linear-gradient(to left,rgb(110, 255, 110),rgb(0, 83, 0));
+   color: white;
+}
+.vidstepul{
+    position: relative;
+    left: 5%;
+    top: 7%;
+    list-style-type: circle;
+    font-size: 120%;
+    font-family: cursive;
+}
+.viduploadbtn{
+    width: 100%;
+    height: 53%;
+    /* background-color: rgb(9, 255, 0); */
+    margin-bottom: 1%;
+}
+.vidform{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.vidname{
+    font-size: 120%;
+    font-family: cursive;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    outline: none;
+    width: 45%;
+    padding: 1%;
+    border-radius: 10px;
+}
+.vidfile{
+    font-size: 120%;
+    padding: 1%;
+    width: 45%;
+    height: 16%;
+    background-color: white;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 5px 5px 10px black;
+}
+::-webkit-file-upload-button{
+    color: white;
+    height: 100%;
+    font-family: cursive;
+    background:linear-gradient(to left,blue,purple) ;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 1px 0px 1px 1px pink;
+    outline: none;
+    
+}
+::-webkit-file-upload-button:hover{
+    color: purple;
+    border: 3px solid rgb(97, 11, 146);
+    background: white;
+}
+.vidupload{
+    height: 20%;
+    width: 45%;
+    font-size: 140%;
+    font-family: cursive;
+    background: linear-gradient(to left,rgb(219, 26, 0),rgb(255, 170, 11)) ;
+    color: white;
+    border-radius: 10px;
+}
+
+/*******************[ Footer ] ******************/
+.box7{
+    width: 100%;
+    height: 8%;
+    background-color: rgb(0, 0, 0);
+}
+.new-box7{
+    height: 4%;
+}
+.footerp{
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    font-family: constantia;
+    padding-top: 1%;
+}

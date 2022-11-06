@@ -1,0 +1,351 @@
+:root{
+    --gradient:linear-gradient(90deg,rgba(128, 0, 128, 0.589),rgba(59, 59, 182, 0.589));
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+     padding:0;
+    box-sizing: border-box;
+    border:none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.5rem;
+}
+html::-webkit-scrollbar-track{
+    background:#333;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:linear-gradient(90deg,rgba(0, 0, 255, 0.37),rgba(90, 1, 90, 0.438));
+}
+body
+{
+    background-color:blanchedalmond;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding:1.5rem 7%;
+    background:var(--gradient);
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+header #menu{
+    font-size: 3rem;
+    color:#fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+header .logo img{
+    height: 60px;
+}
+
+header .navbar h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-weight: bolder;
+    margin:0 1rem;
+    font-size: 3rem;
+    color:#fff;
+}
+
+/* header .navbar h1{
+   
+} */
+
+/* header .navbar h1{
+    font-size: 2rem;
+    color:#fff;
+} */
+header .navbar h1:hover{
+    color:#444;
+}
+ #back
+{
+    /* position: absolute;
+    right: 20rem; */
+    margin-right: 10rem;
+    font-size: 2rem;
+}
+
+header #back a{
+    position: absolute;
+    font-weight:bolder;
+    top: 3.5rem;
+    font-size: 2rem;
+    color:black;
+    cursor: pointer;
+}
+
+header #back:hover{
+    color:white;
+}
+header #back a:hover{
+    color:white;
+}
+.live
+{
+    position: absolute;
+    top: 18rem;
+    left: 3rem;
+    border: 2px solid black;
+    border-radius:3rem ;
+    height: 65vh;
+    width: 95vw;
+    box-shadow: 1px 1px 10px 6px  #111;
+    background-image: linear-gradient(90deg,rgba(59, 59, 182, 0.589),rgba(128, 0, 128, 0.589));
+    
+}
+ #image img
+{   
+    /* border: 2px solid black; */
+    
+    border-radius:2rem ;
+    height: 45vh;
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+}
+.link
+{
+    /* border: 2px solid black; */
+    border-radius:2rem ;
+    height: 45vh;
+    width: 25vw;
+    position: absolute;
+    top: 5rem;
+    left: 90rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.link h1
+{
+    font-family: cursive;
+    
+}
+/* .link  p a
+{
+    font-weight: bold;
+} */
+.link   a
+{   font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 5rem;
+    left: 3.2rem;
+}
+form i
+{
+    position: absolute;
+    top:10.5rem;
+    left: 33rem;
+}
+.link input {
+    width: 22vw;
+    height: 8vh;
+    border: 4px double transparent;
+    border-radius: 3rem;
+    background-image: linear-gradient(white, white), 
+    radial-gradient(circle at top left, blue,purple);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    position: absolute;
+    top: 9.5rem;
+    left: 2rem;
+  }
+  ::-webkit-input-placeholder
+  { 
+      
+      padding: 2rem;
+      font-family: cursive;
+  }
+  input 
+  {
+
+      text-align: center;
+  }
+  .link h2
+  {
+        color: black;
+        font-family: cursive;
+        font-size: large;
+        font-weight: bolder;
+        position: absolute;
+        top: 5rem;
+        left: 8rem;
+    
+  }
+  span h2
+  {
+      color: black;
+        font-family: cursive;
+        font-size: large;
+        font-weight: bolder;
+        position: absolute;
+        top: 5rem;
+        left: 8rem;
+  }
+
+
+  .btn{
+    display: inline-block;
+    padding:.1rem 1rem;
+    font-size: 2rem;
+    font-family: cursive;
+    font-weight: bolder;
+    color:#fff;
+    background:var(--gradient);
+    border-radius: 5rem; 
+     margin-top: 1rem; 
+     cursor: pointer;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    margin-left:-29px;
+    margin-bottom: -2rem;
+    width: 11rem;
+    height: 3rem;
+    top: 18rem;
+    left: 15rem;
+  } 
+   .btn 
+  {
+    margin-top: -2rem;
+  } 
+   .btn::before{
+    content: '';
+    position: absolute;
+    top:-2rem; 
+    left:-100%;
+    background:#fff9;
+    height:150%;
+    width:20%;
+    transform: rotate(25deg);
+    z-index: -1;
+  } 
+  
+   .btn:hover::before{
+    transition: .3s linear;
+    left: 120%;
+  } 
+  #step
+  {
+      position: absolute;
+      top: 20rem;
+      color: red;
+      
+  }
+  .fa-exclamation-circle
+  {
+    position: absolute;
+    top: 21.8rem;
+    left: 7rem;
+  }
+ /* .fa-exclamation-circle
+ {
+     position: absolute;
+     left: 5rem;
+     top:2rem
+ } */
+ .steps
+ {   
+     display:none ;
+     padding: 2rem;
+     font-weight: bold;
+     
+     overflow: scroll;
+    box-sizing: content-box;
+     /* border: 2px solid black; */
+     height: 5rem;
+     width: 30rem;
+     position: absolute;
+     top: 23rem;
+     left: 2rem;
+     overflow-x: hidden;
+ } 
+ /* .steps:target
+ {
+     display: block;
+ } */
+
+.footer{
+    position: absolute;
+    top: 62rem;
+    background:#333;
+    width: 100vw;
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+    margin:1.5rem;
+    text-align: center;
+    flex:1 1 25rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:#fff;
+    padding:1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.7rem;
+    color:#eee;
+    padding:.7rem 0;
+}
+
+.footer .box-container .box p i{
+    padding-right: .5rem;
+    color:#f39c12;
+}
+
+.footer .box-container .box a{
+    font-size: 1.8rem;
+    display: block;
+    padding:.5rem 0;
+    color:#eee;
+}
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+
+.footer .credit{
+    padding:2rem 1rem;
+    font-size: 2rem;
+    color:#fff;
+    background:#111;
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 9rem;
+}
+
+.footer .credit a{
+    color:#f39c12
+}

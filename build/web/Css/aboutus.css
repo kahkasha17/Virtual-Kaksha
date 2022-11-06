@@ -1,0 +1,556 @@
+:root{
+    --gradient:linear-gradient(90deg,rgba(216, 216, 31, 0.76),cyan);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body
+{
+    overflow-x: hidden;
+}
+.mainbox{
+    width: 100vw;
+    height: 350vh;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box1{
+    width: 106%;
+    height: 23.3%;
+    display: flex;
+    align-items: center;
+   
+}
+.mywidth{
+    height: 700%;
+    width: 25%;
+    background-color:  rgb(68, 81, 255);
+}
+.box1-cont{
+    width: 75%;
+    height: 90%;
+    background-color: white;
+ position: relative;
+ right: 12.6%;
+    z-index: 99px;
+    
+    box-shadow: 0 0 0.2rem 0.02rem rgb(0, 0, 0);
+}
+.nav{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlink{
+    width: 60%;
+    height: 100%;
+    /* background-color: chartreuse; */
+}
+.mylis{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.myA{
+    text-decoration: none;
+    color: rgb(49, 49, 255);
+    font-size: 150%;
+    font-family: cursive;
+}
+
+.imgstyle{
+   height: 80%;
+   margin-left: 2%;
+}
+.pic-cont{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.cont1{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(146, 14, 36); */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.myh2{
+    font-family: constantia;
+    font-size: 260%;
+    font-style: italic;
+    margin-top: 5%;
+}
+.myp{
+    font-family: cursive;
+    font-size: 80%;
+    margin-left: 10%;
+    width: 100%;
+}
+.enrollbtn{
+    background-color: rgb(68, 81, 255);
+    color: white;
+    width: 30%;
+    height: 10%;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 2%;
+    font-family: serif;
+    font-size: 120%;
+    position: relative;
+    top: 10%;
+    right: 26%;
+    /* border: 1px solid black; */
+    border-radius: 10%;
+}
+.wrapper{
+  display:none;
+  background:#3333ff;
+  height: 30%;
+  width: 25%;
+  margin-top: -17%;
+  margin-left: 2%;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  padding: 20px 15px;
+  box-shadow: 20px 5px 30px rgba(0,0,0,0.2);
+}
+.wrapper .option
+{
+  background: #fff;
+  height: 50%;
+  width: 91%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot
+{
+  margin-right:-21%; 
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #0069d9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+/*  border-color: #0069d9;*/
+  background:var(--gradient);
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 20px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+
+
+
+
+
+
+.pic{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(100, 104, 136); */
+}
+.abtpic{
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------------------------------------------ */
+
+.box2{
+    width: 80%;
+    height: 23%;
+    /* background-color: rgb(0, 255, 149); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 0.2rem 0.02rem rgb(0, 0, 0);
+}
+
+.story{
+    width: 100%;
+    height: 50%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.storypic{
+    width: 38%;
+    height: 100%;
+}
+.storyimg{
+    width: 100%;
+    height: 100%;
+}
+.storycont{
+    width: 60%;
+    height: 100%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.storyh1{
+    text-decoration: underline;
+    font-family: constantia;
+    font-style: italic;
+}
+.storyp{
+    font-family: cursive;
+    font-size: 90%;
+    font-style: italic;
+}
+/* ------------------------------- */
+
+.inno{
+    width: 100%;
+    height: 50%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innopic{
+    width: 38%;
+    height: 100%;
+}
+.innoimg{
+    width: 100%;
+    height: 100%;
+}
+.inno-cont{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conth1{
+    text-decoration: underline;
+    font-family: constantia;
+    font-style: italic;
+}
+.contp{
+    font-family: cursive;
+    font-size: 85%;
+    font-style: italic;
+    margin-left: 2%;
+}
+
+
+/**********************************************************************/
+
+.box3{
+    width: 80%;
+    height: 23%;
+    /* background-color: rgb(255, 0, 157); */
+    box-shadow: 0 0 0.2rem 0.02rem rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mission{
+    width: 100%;
+    height: 50%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.misspic{
+    width: 38%;
+    height: 100%;
+}
+.missimg{
+    width: 100%;
+    height: 100%;
+}
+.misscont{
+    width: 60%;
+    height: 100%;
+    /* background-color: blanchedalmond; */
+    
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.missh1{
+    text-decoration: underline;
+    font-family: constantia;
+    font-style: italic;
+}
+.missp{
+    font-family: cursive;
+    font-size: 90%;
+    font-style: italic;
+}
+/*====================== goal -------------------------- */
+
+.goal{
+    width: 100%;
+    height: 50%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goalpic{
+    width: 38%;
+    height: 100%;
+}
+.goalimg{
+    width: 100%;
+    height: 100%;
+}
+.goal-cont{
+    width: 60%;
+    height: 100%;
+    /* background-color: blanchedalmond; */
+    
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.goalh1{
+    text-decoration: underline;
+    font-family: constantia;
+    font-style: italic;
+}
+.goalp{
+    font-family: cursive;
+    font-size: 85%;
+    font-style: italic;
+    margin-left: 2%;
+}
+.goalul{
+    width: 100%;
+    height: 100%;
+
+}
+.goalli{
+    font-family: cursive;
+    font-size: 90%;
+    font-style: italic;
+    margin-left: 7%;
+}
+
+/* **************************************************************** */
+.box4{
+    width: 80%;
+    height: 18%;
+    /* background-color: rgb(255, 136, 0); */
+    
+    background-color: white;
+    box-shadow: 0 0 0.2rem 0.02rem rgb(0, 0, 0);
+}
+
+.team{
+    width: 100%;
+    height: 80%;
+    /* background-color: pink; */
+    
+    background-color: white;
+    display: flex;
+    justify-content: center;
+margin-top: .5%;
+}
+
+.teampic{
+    width: 38%;
+    height: 100%;
+}
+.teamimg{
+    width: 100%;
+    height: 100%;
+}
+.teamcont{
+    width: 60%;
+    height: 100%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.teamh1{
+    text-decoration: underline;
+    font-family: constantia;
+    font-style: italic;
+    text-align: center;
+}
+.teamp{
+    font-family: cursive;
+    font-size: 85%;
+    font-style: italic;
+    text-align: center;
+}
+
+.tl{
+    width: 25%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.front{
+    width: 25%;
+    height: 100%;
+    /* background-color: rgb(4, 0, 255); */
+}
+
+.back{
+    width: 25%;
+    height: 100%;
+    /* background-color: rgb(255, 153, 0); */
+}
+
+.helper{
+    width: 25%;
+    height: 100%;
+    /* background-color: rgb(0, 255, 85); */
+}
+.teamimg{
+    width: 80%;
+    height: 70%;
+    border-radius: 100%;
+    border: 5px solid rgb(49, 49, 255);
+    margin-left: 10%;
+}
+.teamcaption{
+    font-size: 80%;
+    font-family: cursive;
+    text-align: center;
+}
+/* -------------------------------- */
+.footer{
+    width: 100%;   
+    height: 8.7%;
+    background-color: yellow;
+}
+.footer{
+    background:#333;
+    text-transform: capitalize;
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+    margin:1rem;
+    text-align: center;
+    flex:1 1 10rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 1.5rem;
+    color:#fff;
+    padding:0.1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.0rem;
+    color:#eee;
+    padding:.2rem 0;
+}
+
+.footer .box-container .box p i{
+    /* padding-right: .5rem; */
+    color:#f39c12;
+}
+
+.footer .box-container .box a{
+    text-decoration:none; 
+    font-size: 1rem;
+    display: block;
+    padding:.1rem 0;
+    color:#eee;
+}
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+
+.footer .credit{
+    padding:1rem 0.5rem;
+    font-size: 1rem;
+    color:#fff;
+    background:#111;
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 1rem;
+}
+
+.footer .credit a{
+    color:#f39c12
+}

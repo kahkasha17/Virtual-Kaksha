@@ -1,0 +1,564 @@
+/* yeh bhi fatima ne kiya hai saale kuch toh karle */
+:root {
+    --grad: linear-gradient(90deg, rgb(149, 107, 149), rgb(63, 66, 222));
+}
+body{
+    background-color: rgb(104, 153, 226);
+}
+/* yahh tukk */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+.add
+{
+    display: none;
+  position: fixed;
+  top: 30%;
+  background: black;
+  color: white; 
+  width: 35%;
+  margin: auto;
+  margin-left: 25%;
+  border-radius: 60px;
+  cursor: pointer;  
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.addbtn
+{
+    color: white;
+}
+
+.navs #signout:hover {
+    font-size: 31px;
+     color: black;
+}
+
+
+.navs  #signout  {
+    font-size: 24px;
+   
+    color: white;
+    position: absolute;
+    /* float: right;*/
+    margin-left: 1140px;
+    top: 26px; 
+}
+.main {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 72%;
+}
+
+.logo {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 2%;
+}
+
+
+.pic img {
+    /* fatima ne kiya hai  height and width given by fatima and i gave 40 instead of 60*/
+    height: 60px;
+    width: 60px;
+    float: left;
+    position: absolute;
+    /* yaah tukk */
+    top: 5px;
+    left: 6px;
+    background-color: rgb(149, 107, 149);
+}
+
+.navs {
+    display: flex;
+    padding: 1px;
+    font-weight: bold;
+    justify-content: center;
+    background: var(--grad);
+
+}
+
+ul li {
+    display: inline-flex;
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+   color: black;
+    /*background-image: linear-gradient(to bottom Right, rgb(235, 20, 235), rgb(227, 104, 124));*/
+}
+
+
+
+
+.sidebar {
+    height: 100%;
+    width: 0%;
+    /* left:-280px; */
+    background-color: black;
+    position: relative;
+    
+    display: inline-block;
+}
+
+
+.sidebar .logo {
+    /* background-image: linear-gradient(to bottom right, rgba(240, 150, 208, 0.718), rgba(31, 210, 213, 0.889)); */
+    /* background-color: black; */
+    position: absolute;
+    height: 100%;
+    width: 280px;
+    /* box-shadow: 0 0 6px rgba(255, 255, 255, 0.5); */
+}
+
+.logo {
+    left: -280px;
+    /* background-color: black;  */
+}
+
+
+.logo .M_logo {
+    position: absolute;
+    width: 96.6%;
+    height: 60px;
+
+    background-color: black;
+    /* box-shadow: 0 0 6px rgba(255, 255, 255, 0.5); */
+}
+
+.M_logo {
+     /*margin-left:2px ;*/ 
+     margin-top: 8%;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.logo .M_logo a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+.logo .menu {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 545%;
+}
+
+.menu ul {
+    background-color:black;
+    height: 400%;
+    
+}
+
+.logo .menu li a {
+    color: #fff;
+}
+
+.logo .menu li {
+    color: #fff;
+    /*margin-top: 6px;*/
+    /*padding: 5px;*/
+    transition: all 0.3s linear;
+    border-bottom: 1px solid black;
+    
+}
+
+.sidebar .menu i {
+    color: #fff;
+    font-size: 18px;
+    /* padding: 8px; */
+    margin-right: 20px;
+}
+
+.logo .menu li:hover {
+    border-left: 1px solid #fff;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+#check {
+    display: none;
+}
+
+.btn_one i {
+    font-size: 30px;
+    margin-top: 4px;
+    /* position: absolute; */
+    top: -7px;
+
+}
+
+.logo .btn_one i {
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    /* line-height:60px; */
+    left: -15px;
+    /* top: 28px; */
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.logo .btn_two i {
+    font-size: 25px;
+    line-height: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 180px;
+    top: 30px;
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+
+.btn_two i {
+    color: black;
+}
+
+.btn_two i:hover {
+    font-size: 28px;
+}
+
+
+#check:checked~.logo {
+    left: 0px;
+}
+
+.pic {
+    background-color: black;
+}
+
+.mainDet {
+    width: 79%;
+    margin: 1%;
+    margin-bottom: 70%;
+    height: 100vh;
+    position: absolute;
+
+}
+
+.panels {
+    width: 20%;
+    height: 5vh;
+    display: inline-block;
+    float: right;
+}
+
+.User_Det {
+    position:absolute;
+    border: 1px solid black;
+    width:18.3%;
+    left: 81.5%;
+    height: 139vh;
+    background-color:black;
+    overflow-x:hidden;
+    overflow-y:auto; 
+    text-align: center;
+    border-radius: 20px;
+    margin-top:58px;
+    
+    }
+
+ul.users li {
+    display: block;
+    color: #fff;  
+    cursor: pointer;
+}
+ul.users li:hover{
+    background-color: #fff;
+    color:black; 
+}
+
+.para
+{ font-size:20px;
+  padding: 15px;
+     color: #fff;
+}
+
+.Student {
+    text-align: center;
+    border: 1px solid black;
+    height:18%;
+    width: 98%;
+    margin: 1%;
+    background-color: cornsilk;
+    border-radius: 15px;
+    box-shadow: 2px 0.1px 2px 2px black;
+}
+
+button{
+   background:var(--grad);
+   color: #fff;
+   border-radius: 50px;
+   width:25%;
+   padding: 10px;
+   box-shadow: 2px 2px 1px 1px rgba(145, 142, 236, 0.838);
+}
+button:hover{
+padding:15px;
+}
+
+table{
+border-collapse: collapse;
+border-radius:1rem;
+/*padding: 1em;*/
+overflow: hidden;
+width: 98%;
+background-color:#fff;  
+}
+
+thead th{
+    background-color: grey;    
+}
+tbody{
+   text-align: center;
+    width:35%;
+}
+tbody td {
+    padding:5px;
+}
+
+tbody tr td:nth-child(even){
+   background-color: #eee;
+}
+tbody tr td:nth-child(odd){
+   background-color:#d9d9d9;
+}
+
+.btns{
+    /* position:relative;*/
+    margin-top:12px; 
+    position: absolute;
+    left: 12%;
+    width: 80%;
+    display: block;
+}
+
+.stud_det{
+   
+   width:101.7%;
+   border-radius:4px;
+   display: none;
+}
+.stud_det .content{
+    margin-left:1%;
+}
+.student_disp{
+    display: block;
+}
+
+/* Teacher Start */
+.Student1{
+    text-align: center;
+    border: 1px solid black;
+    height:18%;
+    width: 98%;
+    margin: 1%;
+    background-color: cornsilk;
+    border-radius: 15px;
+    box-shadow: 2px 0.1px 2px 2px black;
+}
+.teach_det{
+     width:101.7%;
+     border-radius: 4px;
+     display:none;
+    }
+.teach_det .content{
+    margin-left: 1%;
+}
+
+.teach_disp{
+    display:block;
+}
+/* Teacher End */
+
+/* Contact Start */
+
+.Student2{
+    
+    text-align: center;
+    border: 1px solid black;
+    height:18%;
+    width: 98%;
+    margin: 1%;
+    background-color: cornsilk;
+    border-radius: 15px;
+    box-shadow: 2px 0.1px 2px 2px black;
+}
+
+.contact_det{
+width:98%;
+/*height: 20%;*/
+/* background-color: aqua; */
+border-radius:8px;
+/*margin-left:10%;*/
+display: none;
+}
+.contact_det .content{
+    margin-left: 1%;
+}
+.contact_disp{
+    display: block;
+}
+
+/* Contact End */
+
+/* Assignment  Start */
+
+.Student3{
+    text-align: center;
+    border: 1px solid black;
+    height:18%;
+    width: 98%;
+    margin: 1%;
+    background-color: cornsilk;
+    border-radius: 15px;
+    box-shadow: 2px 0.1px 2px 2px black;
+}
+.assign_det{
+    width:98%;
+    /*height: 20%;*/
+    border-radius:8px;
+    /* background-color: aqua; */
+    /*margin-left:10%;*/
+    display: none;
+}
+.has_det{
+    width:98%;
+    border-radius:8px;
+    display: none;
+}
+
+.has_disp{
+    display:block;
+}
+.assign_det .content{
+    margin-left:1%;
+}
+
+.assign_disp{
+    display: block;
+}
+/* Assignment  End */
+
+
+/* Books Start */
+.Student4{
+    text-align: center;
+    border: 1px solid black;
+    height:18%;
+    width: 98%;
+    margin: 1%;
+    background-color: cornsilk;
+    border-radius: 15px;
+    box-shadow: 2px 0.1px 2px 2px black;
+}
+
+
+.book_det{
+    width:  98%;
+    /* height: 20%;*/
+    border-radius: 8px;
+    /*margin-left:10%;*/
+    display:none;
+    /*background-color: aqua;*/
+}
+.book_det .content{
+    margin-left: 1%;
+}
+.book_disp{
+    display: block;
+}
+
+/* Book Closes */
+
+/* Notes Starts */
+.Student5{
+    text-align: center;
+    border: 1px solid black;
+    height:18%;
+    width: 98%;
+    margin: 1%;
+    background-color: cornsilk;
+    border-radius: 15px;
+    box-shadow: 2px 0.1px 2px 2px black;
+}
+
+.notes_det{
+    width: 98%;
+    /*height:20%;*/
+    border-radius: 8px;
+    /*margin-left:10%;*/
+    display:none;
+    /* background-color: aqua; */
+}
+
+.notes_det .content{
+    margin-left: 1%;
+}
+
+.notes_disp{
+    display:block;
+}
+/* Notes End */
+
+/* Videos Start */
+
+.Student6{
+    text-align: center;
+    border: 1px solid black;
+    height:18%;
+    width: 98%;
+    margin: 1%;
+    margin-bottom: 2%;
+    background-color: cornsilk;
+    border-radius: 15px;
+    box-shadow: 2px 0.1px 2px 2px black;
+}
+.videos_det{
+    width: 98%;
+    /*height:20%;*/
+    border-radius: 8px;
+    margin-bottom:5%;
+   
+    /*margin-left:10%;*/
+    display:none;
+     /*background-color: aqua;*/ 
+}
+
+.videos_det .content{
+    margin-left: 1%;
+     
+     
+}
+.videos_disp{
+    display: block;
+   
+}
+
+/* Videos End */
+
+
+.new-student {
+    width: 58%;
+    margin-left: 22%;
+    
+}
+
+
+
+
+

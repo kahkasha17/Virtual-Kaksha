@@ -1,0 +1,118 @@
+:root{
+    --gradient:linear-gradient(30deg,rgb(43, 158, 158),pink);
+    --grad:linear-gradient(30deg,pink,cyan);
+    --gradi:linear-gradient(30deg,pink,blue);
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    border:none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+    
+}
+body
+{
+    background:var(--grad); 
+    overflow-x: hidden;
+}
+.navbar
+{
+   background: var(--gradient); 
+   /* border-radius: 0.1rem; */
+}
+.navbar-brand img
+{
+    height: 60px;
+}
+ .abc:hover
+{
+    color:rgb(191, 172, 172); 
+}
+ul li a
+{
+    font-weight: bold;
+}
+input[type=search]
+{
+    border-radius: 2rem;
+}
+button[type=submit]
+{
+    border-radius: 1rem;
+}
+.container .carousel-item
+{
+    /* position: relative;
+    left: 7rem; */
+    width: 72.5%;
+    margin-left: 13%;
+    
+    
+    
+}
+.card-body
+{
+    border-image: var(--grad);
+    box-shadow: 10px 30px 2px 5px blue;
+}
+input[type=file]::file-selector-button
+{
+    background: var(--gradi);
+    color: white;
+    font-weight: bold;
+}
+
+
+.updassign h2 ,.getassign h2
+{
+    text-align: center;
+    font-family: cursive;
+}
+.updassign
+{
+    display: flex;
+    justify-content: center;
+}
+.updform
+{
+    align-items: center;
+}
+/* .mainrow
+{
+    
+} */
+.upd
+{
+    display: flex;
+    justify-content: center;
+    border: 2px solid pink;
+    
+}
+.upd .headass
+{   
+    width: 98%;
+}
+.upd .headass h3
+{
+    font-family: cursive;
+    
+}
+.upd input[type=file]
+{
+    margin: 4% 2%;   
+    width: 95%;
+}
+#upd,#get
+{
+    display: none;
+}
+.foot
+{
+    text-align: center;
+    color: white;
+}
