@@ -1,0 +1,220 @@
+﻿create database virtual_class;
+
+
+
+DROP TABLE IF EXISTS `virtual_class`.`admin`;
+CREATE TABLE  `virtual_class`.`admin` (
+  `vid` int(11) NOT NULL AUTO_INCREMENT,
+  `fname` varchar(30) NOT NULL,
+  `lname` varchar(30) DEFAULT NULL,
+  `pass` varchar(30) NOT NULL,
+  `mailid` varchar(30) NOT NULL,
+  `mobile` varchar(30) NOT NULL,
+  `dob` date NOT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `address` varchar(200) DEFAULT NULL,
+  `lastmodified` datetime DEFAULT NULL,
+  PRIMARY KEY (`vid`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+insert into admin(fname,lname,pass,mailid,mobile,dob,gender,address,lastmodified)values('Kahkasha','Khan','Admin@123','kaksha17820virtual@gmail.com',7217697611,'2003-11-17','female','AApke dil mai ',now());
+insert into tbllogin(sid,pass,Name)values('AVKID1001','Admin@123','Kahkasha khan');
+
+
+
+
+
+CREATE TABLE cont_us (
+  `Qid` int(11) NOT NULL AUTO_INCREMENT primary key,
+  `name` varchar(50) ,
+  `email` varchar(50),
+  `options` varchar(20),
+  `mobile` varchar(20) ,
+  `qrya` varchar(200) ,
+  `last_modified` datetime
+);
+
+
+CREATE TABLE  `virtual_class`.`teacherregis` (
+  `sid` int(11) NOT NULL AUTO_INCREMENT,
+  `fname` varchar(30) NOT NULL,
+  `lname` varchar(30) DEFAULT NULL,
+  `pass` varchar(30) NOT NULL,
+  `mailid` varchar(30) NOT NULL,
+  `mobile` varchar(30) NOT NULL,
+  `dob` date NOT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `course` varchar(30) NOT NULL,
+  `address` varchar(200) DEFAULT NULL,
+  `lastmodified` datetime DEFAULT NULL,
+  PRIMARY KEY (`sid`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE  `virtual_class`.`stdregistration` (
+  `sid` int(11) NOT NULL AUTO_INCREMENT,
+  `fname` varchar(30) NOT NULL,
+  `lname` varchar(30) DEFAULT NULL,
+  `pass` varchar(30) NOT NULL,
+  `mailid` varchar(30) NOT NULL,
+  `mobile` varchar(30) NOT NULL,
+  `dob` date NOT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `course` varchar(30) NOT NULL,
+  `address` varchar(200) DEFAULT NULL,
+  `lastmodified` datetime DEFAULT NULL,
+  PRIMARY KEY (`sid`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+
+
+
+CREATE TABLE  `virtual_class`.`tbllogin` (
+  `sid` varchar(20) NOT NULL,
+  `pass` varchar(30) DEFAULT NULL,
+  `Name` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`sid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+create table tbllogindetails
+(
+  `sr` int primary key auto_increment,
+  `id` varchar(20) NOT NULL,
+  `pass` varchar(30) not NULL,
+  `Name` varchar(50) not NULL,
+  `lastmodified` datetime NOT NULL
+);
+
+
+create table tbllogoutdetails
+(
+  `sr` int primary key auto_increment,
+  `id` varchar(20) NOT NULL,
+  `pass` varchar(30) not NULL,
+  `Name` varchar(50) not NULL,
+  `lastmodified` datetime NOT NULL
+);
+
+create table tblassign
+(
+  Sr int primary key auto_increment,
+  id varchar(70)not null,
+  Assign longblob ,
+  Title varchar(50) not null,
+  name varchar(50) ,
+  course varchar(20),
+  pos varchar(50),
+  last_date varchar(50) ,
+  lastmodified datetime not null
+);
+
+
+CREATE TABLE  `virtual_class`.`tbl_lib_books` (
+  `bid` int(11) NOT NULL AUTO_INCREMENT,
+  `uid` varchar(30) NOT NULL ,
+  `bookname` varchar(100) NOT NULL,
+  `booksub` varchar(30) NOT NULL,
+  `bookfile` longblob DEFAULT NULL,
+  `lastmodified` datetime DEFAULT NULL,
+  PRIMARY KEY (`bid`),
+  UNIQUE KEY `bookname` (`bookname`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+DROP TABLE IF EXISTS `virtual_class`.`tbl_lib_notes`;
+CREATE TABLE  `virtual_class`.`tbl_lib_notes` (
+  `nid` int(11) NOT NULL AUTO_INCREMENT,
+  `uid` varchar(30) NOT NULL ,
+  `notename` varchar(100) NOT NULL,
+  `notesub` varchar(30) NOT NULL,
+  `notefile` longblob DEFAULT NULL,
+  `lastmodified` datetime DEFAULT NULL,
+  PRIMARY KEY (`nid`),
+  UNIQUE KEY `notename` (`notename`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+DROP TABLE IF EXISTS `virtual_class`.`tbl_lib_video`;
+CREATE TABLE  `virtual_class`.`tbl_lib_video` (
+  `vid` int(11) NOT NULL AUTO_INCREMENT,
+  `uid` varchar(30) NOT NULL ,
+  `vidname` varchar(100) NOT NULL,
+  `vidsub` varchar(30) NOT NULL,
+  `vidlink` varchar(200) DEFAULT NULL,
+  `lastmodified` datetime DEFAULT NULL,
+  PRIMARY KEY (`vid`),
+  UNIQUE KEY `vidname` (`vidname`),
+  UNIQUE KEY `vidlink` (`vidlink`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+DROP TABLE IF EXISTS `virtual_class`.`tbllive`;
+CREATE TABLE  `virtual_class`.`tbllive` (
+  `Sr_no` int(11) NOT NULL AUTO_INCREMENT,
+  `id` varchar(50) NOT NULL,
+  `url` varchar(500) NOT NULL,
+  `title` varchar(50) NOT NULL,
+  `Name` varchar(50) NOT NULL,
+  `course` varchar(50) NOT NULL,
+  `wmode` varchar(20) NOT NULL,
+  `lastmodified` datetime DEFAULT NULL,
+  PRIMARY KEY (`Sr_no`)
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4;
+
+
+create table tbl_has(
+id  int primary key auto_increment,
+Name varchar(10) not null,
+Course varchar(10) not null,
+qry  varchar(1000) not null,
+lastmodified datetime
+);
+
+
+
+create table tbl_feed
+(
+  Sr int primary key auto_increment,
+  vid varchar(70)not null,
+  name varchar(50)not null,
+  course varchar(20)not null,
+  wmode varchar(15)not null,
+  rating varchar(10) not null,
+  feedback varchar(500) ,
+  lastmodified datetime
+);
+create table tbl_has( 
+id  varchar(20), 
+Name varchar(20), 
+Course varchar(20), 
+qry  varchar(1000), 
+mailId varchar(50), 
+last_modified datetime 
+);
+
+
+
+DROP TABLE IF EXISTS `virtual_class`.`upload_Adminimg`;
+CREATE TABLE  `virtual_class`.`upload_Adminimg` (
+  `imgid` int(11) NOT NULL AUTO_INCREMENT,
+  `sid` varchar(20) NOT NULL,
+  `image` longblob DEFAULT NULL,
+  `lastmodified` datetime DEFAULT NULL,
+  PRIMARY KEY (`imgid`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+
+
+DROP TABLE IF EXISTS `virtual_class`.`upload_img`;
+CREATE TABLE  `virtual_class`.`upload_img` (
+  `imgid` int(11) NOT NULL AUTO_INCREMENT,
+  `sid` varchar(20) NOT NULL,
+  `image` longblob DEFAULT NULL,
+  `lastmodified` datetime DEFAULT NULL,
+  PRIMARY KEY (`imgid`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+
+
+DROP TABLE IF EXISTS `virtual_class`.`upload_stdimg`;
+CREATE TABLE  `virtual_class`.`upload_stdimg` (
+  `imgid` int(11) NOT NULL AUTO_INCREMENT,
+  `sid` varchar(20) NOT NULL,
+  `image` longblob DEFAULT NULL,
+  `lastmodified` datetime DEFAULT NULL,
+  PRIMARY KEY (`imgid`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;

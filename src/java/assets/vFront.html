@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual कक्षा</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!--  css file link  -->
+    <link rel="stylesheet" href="vfront.css">
+    <!-- <link rel="stylesheet" href="fpw.css"> -->
+    <!--  js file link  -->
+    <script src="vfront.js"></script>
+    <!-- <script src="fpw.js"></script> -->
+
+</head>
+<body onload="start()">
+<!-- header section starts  -->
+<header>
+    <div id="menu" class="fas fa-bars"></div>
+    <a href="logo.jpg" class="logo"><img src="logo.jpg" alt="not found"></a>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="login" class="fas fa-user-circle"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form  -->
+
+<div class="login-form">
+ 
+    <form action="">
+        <h3>login</h3>
+        <input type="email" placeholder="email" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p>forget password?<button  onclick="showing()">click here</button></p>
+        <p>don't have an account?<button> <a href="sreg.html" target="_parent">register now</a></button></p>
+        <input type="submit" class="btn" value="login">
+        <i class="fas fa-times"></i>
+    </form>
+
+</div>
+<!-- forget pw form -->
+<!-- <div class="container" id="container">
+    <button onclick="cross()" id="close"><i class="fas fa-times"></i></button>
+    <div class="outer">
+       
+    <i class="fa fa-lock"></i>
+    <h2>FORGOT PASSWORD?</h2>
+    <p>You can reset your password here.</p>
+    <div class="tab">
+        <table border="0">
+            <form action="">
+                <tr>
+                    <td>
+                    <label for="forgot_mail">
+                        <i class="fa fa-envelope"></i>
+                    </label>
+                    </td>
+                    <td>
+                        <input type="email" id="forgot_mail" placeholder="email address">
+                    </td>
+                </tr>
+
+                 <button id="Pw">Send OTP</button>
+            </form>
+        </table>
+    </div>
+</div>
+</div> -->
+
+<!-- forget pw form ends here -->
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    <h1>Virtual कक्षा</h1>
+    <p>“If you want to teach people a new way of thinking, don’t bother trying to teach them. Instead, give them a tool, the use of which will lead to new ways of thinking.” The new way of learning.</p>
+    <a href="sreg.html" target="_parent"><button class="btn">get started</button></a>
+
+</section>
+<!-- home section ends -->
+<!-- teacher section starts  -->
+
+<section class="faculty" id="faculty">
+
+<h1 class="heading">our expert teachers</h1>
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At non explicabo tempora modi, reprehenderit ratione sunt ea porro tenetur officiis alias sapiente praesentium voluptas cumque quo maiores dolores totam ex.</p>
+
+<a href="#"><button class="btn">login here</button></a>
+
+</section>
+
+<!-- teacher section ends -->
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="coding.jpg" alt="not found">
+    </div>
+
+    <div class="content">
+        <h3>why choose us?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aperiam quaerat dolor voluptas nobis voluptates illum? Inventore voluptas dolore voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex delectus ducimus dignissimos pariatur. Amet sed distinctio earum dolorum nulla, in obcaecati aliquid modi quos magni ducimus culpa nobis laudantium incidunt.</p>
+        <a href="#"><button class="btn">learn more</button></a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading">contact us</h1>
+
+<div class="row">
+
+    <form action="">
+        <input type="text" placeholder="full name" class="box">
+        <input type="email" placeholder="your email" class="box">
+        <input type="text" placeholder="your query title" class="box">
+        <input type="number" placeholder="your number" class="box">
+        <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="your address"></textarea>
+        <input type="submit" class="btn" value="send now">
+    </form>
+
+    <div class="image">
+        <img src="images/contact-img.png" alt="">
+    </div>
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">Noida</a>
+            <a href="#">Patna</a>
+            <a href="#">Uttar Pradesh</a>
+            <a href="#">Makanpur</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#faculty">faculty</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-map-marker-alt"></i> noida, india 400104. </p>
+            <p> <i class="fas fa-envelope"></i> example@gmail.com </p>
+            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+        </div>
+
+    </div>
+
+    <h1 class="credit">created by <a href="#">mr/miss. DRK designer</a> all rights reserved. </h1>
+</div>
+<!-- footer section ends -->
+</body>
+</html>

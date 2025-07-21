@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=IM+Fell+English+SC&display=swap');
+
+:root{
+  --gradient:linear-gradient(90deg,rgba(216, 216, 31, 0.76),Hotpink,red);
+}
+*
+{
+  margin: 0%;
+  padding: 0%;
+}
+body
+{
+  
+  /* background-image: url(7.jpg);
+  background-repeat: no-repeat; 
+  background-size: 100vw; */
+  background-image: url("tbk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-top: 0.1rem; */
+  overflow: hidden;
+}
+/* .color
+{
+  background-color: blue;
+} */
+.pink
+{
+  /* border: 5px solid black; */
+  width: 80vw;
+  height: 90vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-left: 8rem;
+  background-color: rgba(188, 198, 229, 0.233);
+  /* background-color: 
+  rgba(229, 188, 195, 0.342); */
+  background-image: url(spp.png);
+  background-repeat: no-repeat;
+  background-size: 47rem 32rem;
+  /* background-color: white; */
+  background-position: 3.7rem 6rem;
+}
+.pink .div1
+{
+  
+  /* border: 2px solid red; */
+  width: 20vw;
+  height: 25vh;
+  position: absolute;
+  align-self: center ;
+  margin-top: -27rem;
+  background-image: url(logo.jpg);
+  background-repeat: no-repeat; 
+  background-size: contain;
+  background-position-x:3rem ;
+  background-position-y: -0.2rem;
+  bottom: 27rem;  
+  
+  
+}
+.container
+{
+  margin-top: 8rem;
+  height: 25rem;
+  width: 20rem;
+  background-color: white;
+  line-height: 1.43rem; 
+  /* border: 2px solid red; */
+  /* background-image: url(7.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y:center ;
+  background-size:40rem; */
+  box-shadow: 4px 4px 10px 12px black;
+  
+
+}
+/* form
+{
+  border: 2px solid green;
+  width: 20rem;
+  margin-left: -20px;
+} */
+.main 
+{
+  /* border: 2px solid red; */
+  margin-top: 2rem;
+ /* text-align: center;  */
+ padding: 2rem;
+ /* font-size:110%; */
+ /* line-height: 1.43rem;  */
+ 
+}
+.main h2
+{
+  text-align: center;
+  margin-top: -1.7rem;
+  margin-bottom:1.2rem ;
+}
+/* .main form table
+{
+  border: 2px solid pink;
+} */
+
+.main form table i
+{
+  margin-right: 1.01rem;
+}
+.main form table input {
+  border: none;
+  border-bottom: 2px solid gray;
+  size: 30px;
+  line-height: 1.6rem;
+}
+/* .main form table input {
+  font-size: larger;
+} */
+::-webkit-input-placeholder
+{
+  font-size: 1.03rem;
+  font-family:  cursive;
+
+}
+.main form table  select  {
+  align-self: center;
+  border: none;
+  border-bottom: 2px solid gray;
+
+  
+}
+/* #no  option 
+ { */
+  
+  /* margin-bottom: -40rem; */
+/* } */
+  
+
+/* .main form table textarea {
+  border: none;
+  border-bottom: 2px solid gray;
+} */
+.p
+{
+  margin-top: -1rem;
+  font-size: 1.04rem;
+  
+}
+.btn{
+  display: inline-block;
+  padding:.7rem 3rem;
+  font-size: 1.02rem;
+  color:#fff;
+  background:var(--gradient);
+  border-radius: 5rem;
+  /* margin-top: 1rem; */
+  cursor: pointer;
+  box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  margin-left:-29px;
+  margin-bottom: -2rem;
+  width: 9.4rem;
+}
+/* .btn 
+{
+  margin-top: -2rem;
+} */
+.btn::before{
+  content: '';
+  position: absolute;
+  top:-2rem; 
+  left:-100%;
+  background:#fff9;
+  height:150%;
+  width:20%;
+  transform: rotate(25deg);
+  z-index: -1;
+}
+
+.btn:hover::before{
+  transition: .3s linear;
+  left: 120%;
+}
+
+ #btn{
+   display: inline-block;
+  padding:.7rem 3rem;
+  font-size: 1.02rem;
+  color:#fff;
+  background:var(--gradient);
+  border-radius: 5rem;
+  /* margin-top: 1rem; */
+  cursor: pointer;
+  box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  margin-left: 8.4rem;
+  margin-bottom: -2rem;
+  width: 9.4rem;
+  /* height: 2.9rem; */
+
+}
+#btn a{
+  text-decoration: none;
+  /* font-weight: bold; */
+  color: #fff;
+}
+
+#btn::before{
+  content: '';
+  position: absolute;
+  top:-1rem; 
+  left:-100%;
+  background:#fff9;
+  height:150%;
+  width:20%;
+  transform: rotate(25deg);
+  z-index: -1;
+}
+
+#btn:hover::before{
+  transition: .3s linear;
+  left: 120%;
+}
+

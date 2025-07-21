@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Page</title>
+    <link rel="stylesheet" href="student.css">
+    <!-- <link rel="stylesheet" href="dupstu.css"> -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="student.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $(".maindiv").toggleClass("setmain");
+                $(".pad").toggleClass("setpad");
+                $(".livdiv_content").toggleClass("set_live_contant_togle");
+                $(".joinbtn").toggleClass("setjointogle");
+                $(".set_both_div").toggleClass("set_both_togle");
+                $(".assignments").toggleClass("togle_assign");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-----------[ Horizontail navigation bar ]-------->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="Picture not found" class="mylogo">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Attendence</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <div class="sign">
+                <a href="signin.html">SIGN IN</a>
+            </div>
+        </nav>
+    </header>
+
+    <!---------------[ vertical side bar ]------------------------->
+    <!-- <div class="iamdiv"> -->
+    <div class="sidebar">
+        <div class="logo">
+            <div class="logincontent">
+                <img src="login.png" alt="Picture not found" class="loginpic">
+                <div class="content">Student Name<br>Student ID</div>
+            </div>
+            <div class="menu">
+                <i class='bx bx-menu' id="btn" onclick="baractivefuntion()"></i>
+                <!-- <i class='bx bx-menu' id="btn" onclick="baractivefuntion2()" onmouseover="baractivefuntion1()"></i> -->
+            </div>
+        </div>
+        <ul class="navlist">
+            <!--[ search ]-->
+            <li style="border: none;">
+                <div class="search">
+                    <i class='bx bx-search-alt-2 size' onclick="searchactive()"></i>
+                    <input type="text" placeholder="Search..." class="searchbar">
+                </div>
+                <span class="tooltip">Search</span>
+            </li>
+            <!--[ account ]-->
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user-account'></i>
+                    <span class="navcontent">My Account</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <!--[ cources ]-->
+            <li>
+                <a href="#">
+                    <i class="bx bx-book"></i>
+                    <span class="navcontent">Courses</span>
+                </a>
+                <span class="tooltip">Courses</span>
+            </li>
+            <!--[ Digital library ]-->
+            <li>
+                <a href="#">
+                    <i class="bx bx-library"></i>
+                    <span class="navcontent">Digital Library</span>
+                </a>
+                <span class="tooltip">Library</span>
+            </li>
+            <!--[ Assignments ]-->
+            <li>
+                <a href="#">
+                    <i class='bx bxs-book-open'></i>
+                    <span class="navcontent">Assignments</span>
+                </a>
+                <span class="tooltip">Assignments</span>
+            </li>
+            <!--[ help and support ] -->
+            <li>
+                <a href="#">
+                    <i class='bx bx-help-circle'></i>
+                    <span class="navcontent">Help and Support</span>
+                </a>
+                <span class="tooltip">Help</span>
+            </li>
+            <!--[ sign out ]-->
+            <li>
+                <a href="#">
+                    <i class='bx bx-exit'></i>
+                    <span class="navcontent">Sign out</span>
+                </a>
+                <span class="tooltip">Sign Out</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- main div start from here -->
+    <div class="maindiv">
+        <!-------------------------------[ Profile section ]----------------------->
+        <div class="pad profile">
+            <div class="profile_content">
+                <div class="content2">
+                    <p class="heading1">Your Profile</p>
+                    <p class="pf_cont">
+                        <b>
+                            Hey Scholar!!
+                        </b>
+                        welcome to <b>Virtual कक्षा</b>. Your profile is better the others.
+                        Keep Learning with us like this. Hope your future will be brighter as light.
+                    </p>
+                </div>
+                <button class="profile_btn"><a href="#" class="btn">Profile</a></button>
+            </div>
+            <div class="set_profile_img_div">
+                <img src="profile1.jpg" alt="no Picture found" class="set_profile_img">
+            </div>
+        </div>
+        <!-------------------------------[ Library section ]----------------------->
+        <div class="pad classroom">
+            <h1 class="classroomhead">Your Classroom</h1>
+            <div class="libset">
+                <div class="livediv set_both_div">
+                    <div class="setbtn">
+                        <div class="livdiv_content">
+                            Join our <b>Live Classes</b> for the better Learning experience.
+                        </div>
+                        <button class="joinbtn">Go Live</button>
+                    </div>
+                </div>
+                <div class="stdmat set_both_div">
+                    <div class="setotherbtn">
+                        <div class="set_img_con">
+                            <img src="dlib.png" alt="No Picture found" class="dlib">
+                            <div class="set_dig_lib">
+                                <div class="dig_div_content">
+                                    Get your study Material from our <b>Digital Library</b>.
+                                </div>
+                                <button class="joinbtn2">Visit Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------[ Assignment section ]----------------------->
+        <div class="pad">
+            <h1 class="assign_heading">Your Assignments</h1>
+            <div class="assignment">
+                <div class="assign">
+                    <p class="no_of_assign">Assignment-1
+                        <p class="up_assign">Get and Upload your Assignments here...</p>
+                    </p>
+                    <button class="mybtn">Click Me</button>
+                </div>
+                <div class="assign">
+                    <p class="no_of_assign">Assignment-2
+                        <p class="up_assign">Get and Upload your Assignments here...</p>
+                    </p>
+                    <button class="mybtn">Click Me</button>
+                </div>
+                <div class="assign">
+                    <p class="no_of_assign">Assignment-3
+                        <p class="up_assign">Get and Upload your Assignments here...</p>
+                    </p>
+                    <button class="mybtn">Click Me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- </div> -->
+
+    <!-- footer section starts  -->
+
+    <div class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">Noida</a>
+                <a href="#">Patna</a>
+                <a href="#">Utter Pradesh</a>
+                <a href="#">Makanpur</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#faculty">faculty</a>
+                <a href="#contact">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <p> <i class="fas fa-map-marker-alt"></i> noida, india 400104. </p>
+                <p> <i class="fas fa-envelope"></i> example@gmail.com </p>
+                <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+            </div>
+
+        </div>
+
+        <h1 class="credit">created by <a href="#">mr/miss. DRK designer</a> all rights reserved. </h1>
+    </div>
+    <!-- footer section ends -->
+</body>
+
+</html>
